@@ -1,0 +1,929 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 8450px;
+}
+.header{
+    width: 100%;
+    height: 50px;
+    background-color:rgba(176, 161, 161,0.4);
+    position: fixed;
+    z-index: 10000;
+}
+.logo{
+    width: 150px;
+    height:60px;
+    float: left;
+    margin-left:5px;
+}
+.list li{
+    float: right;
+    list-style: none;
+    font-weight: bold;
+    margin-right: 20px;
+    margin-top: 15px;
+    transition: 180;
+}
+.list a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    margin-right: 40px;
+    font-size: 17px;
+    font-style:italic;
+}
+.list a hr{
+   width: 30px;
+   opacity: 0;
+   color: rgb(34, 33, 33);
+   border: 1px  solid;
+}
+.list li:hover hr{
+    opacity: 1;
+    transition: 0.5s;
+}
+.background{
+    z-index: 5;
+    width: 100%;
+    height: 100vh;
+  background-image: url(../imgs/puopiop.jpg);
+  background-size: cover;
+  position: relative;
+}
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0 , 0, 0.1); 
+}
+.content{
+    width: 50%;
+    height: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.t1{
+    font-size: 55px;
+    color: aliceblue;
+    
+}
+.p1{
+    color: aliceblue;
+    font-size: 16px;
+}
+.btn{
+    
+    height: 40px;
+    width: 150px;
+    margin-top:15px ;
+    font-size: 16px;
+    border: 0cap ;
+    border-radius: 5px;
+}
+.btn2{
+    background-color: blue;
+    color: aliceblue;
+}
+.btn:hover{
+   opacity: 0.8;
+}
+.sec2welcome{
+    overflow: auto;
+    text-align: center;
+}
+.welcome{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 150px;
+}
+.welcome hr{
+    color: rgb(61, 61, 190);
+    width: 60px;
+    margin: auto;
+    margin-top: 4px;
+    border: 2px solid;
+    /* height: 2px; */
+    
+}
+
+.sec2d1{
+    margin-top: 200px;
+    width: 340px;
+    height: 200px;
+    margin-left:150px;
+    border: 2px solid gray;
+    float: left;
+}
+.sec2d2{
+    margin-top: 200px;
+    width: 340px;
+    height: 200px;
+    border: 2px solid grey;
+    margin-left: 100px;
+    margin-right: 100px;
+    float: left;
+}
+.sec2d3{
+    margin-top: 200px;
+    width: 340px;
+    height: 200px;
+    border: 2px solid grey;
+    float: left;
+}
+.d{
+    position: relative;
+    text-align: center;
+}
+.d::after{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: black;
+    opacity: 0;
+    transition: 0.5s;
+}
+.d:hover::after{
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+    opacity: 0.7;
+    mix-blend-mode: lighten; 
+ }
+.sec2h{
+    margin-top: 15px;  
+    font-size:15px;
+    font-weight: bold; 
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    transition: color 1s;
+}
+.d:hover .sec2h{
+    color: rgb(255, 255, 255);
+    z-index: 5;
+}
+.sec2a{
+    position: relative;
+    color: #6195ff;
+    font-size: 20px;
+    text-decoration: none;
+    margin-top: 15px;
+    transition: color 1s;
+    font-weight: bold;
+}
+.d:hover .sec2a{
+    z-index: 5;
+}
+#sec2i{
+    margin-top: 15px;
+    font-size: 30px;
+    color:#6195ff;
+    transition: color 1s;
+}
+.sec2p{
+    color: gray;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    transition: color 1s;
+}
+.d:hover #sec2i{
+    z-index: 5;
+}
+.d:hover .sec2p{
+    color :antiquewhite;
+    z-index: 5;
+}
+.sec3background{
+    position: relative;
+    margin-top: 150px;
+    width: 100%;
+    height: 1500px;
+    background-color:rgba(208, 181, 181, 0.4);
+}
+.sec3title{
+
+    font-weight: bold;
+    font-size: 30px;
+    padding-top: 150px;
+    font-family: 'Jacques Francois Shadow', serif;
+    text-align: center;
+
+}
+.sec3title hr{
+    color:rgb(61, 61, 190) ;
+    width: 60px;
+    margin: auto;
+    margin-top: 9px;
+    border: 2px solid;
+}
+.row1pic img,.row2pic img{
+    width: 250px;
+    height: 330px;
+    border: 2px solid;
+}
+.sec3pic1{
+    margin-top: 150px;
+    margin-left: 240px;
+    float: left;
+}
+.sec3pic2{
+    margin-top: 150px;
+    margin-left: 150px;
+    margin-right: 150px;
+    float: left;
+}
+.sec3pic3{
+    margin-top: 150px;
+    float: left;
+}
+.sec3pic4{
+    margin-top: 150px;
+    margin-left: 240px;
+    float: left;
+}
+.sec3pic5{
+    margin-top: 150px;
+    margin-left: 150px;
+    margin-right: 150px;
+    float: left;
+}
+.sec3pic6{
+    margin-top: 150px;
+    float: left;
+}
+.pic{
+    position: relative;
+    overflow: hidden;
+}
+.pic .sec3overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    text-align: center;
+    background-color: rgba(0,0,0);
+    opacity: 0;
+    visibility: hidden;
+    transition:  0.5s;
+}
+.pic:hover .sec3overlay{
+    width: 250px;
+    height: 330px;
+    visibility: visible;
+    opacity: 0.7;
+}
+.toprated{
+    color:white;
+    margin-top: 70px;
+}
+.sec3sc{
+    color:white;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 25px;
+    margin-bottom: 35px;
+}
+.pic:hover::after .toprated,.sec3sc{
+    font-weight: bold;
+    color: black;
+    mix-blend-mode: lighten; 
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+
+}
+.pic:hover::after #sec3ih,#sec3ic{
+    font-weight: bold;
+    mix-blend-mode: lighten; 
+}
+#sec3ih, #sec3ic{
+    font-size: 25px;
+    margin: 0 15px;
+    color: white;
+    z-index: 1000;
+}
+#sec3ih:hover{
+    color: red;
+}
+.sec4title{
+    text-align: center;
+    margin-top: 200px;
+}
+.sec4title hr{
+    color:rgb(61, 61, 190) ;
+    width: 60px;
+    margin: auto;
+    margin-top: 9px;
+    border: 2px solid;   
+}
+.sec4row1{
+    margin-top: 140px;
+   margin-left: 160px;
+}
+.sec4row1 .d4{
+    width: 340px;
+    height: 170px;
+    border: 2px solid gray;
+    float: left;
+}
+.sec4row2{
+    margin-top: 250px;
+    margin-left: 160px;
+}
+.sec4row2 .d4{
+    width: 340px;
+    height: 170px;
+    border: 2px solid gray;
+    float: left;
+}
+.sec4d2,.sec4d5{
+    margin-left: 70px;
+    margin-right: 70px;
+}
+.d4{
+    position: relative;
+}
+.d4::after{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: black;
+    opacity: 0;
+    transition: 0.5s;
+}
+.d4:hover::after{
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+    opacity: 0.7;
+    mix-blend-mode: lighten; 
+ }
+.sec4h{
+    position: absolute;
+    top: 15px;
+    left: 62px;
+    font-size:16px;
+    font-weight: bold; 
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    transition: color 1s;
+}
+.d4:hover .sec4h{
+    color: rgb(255, 255, 255);
+    z-index: 5;
+}
+.sec4i{
+    margin-left: 15px;
+    margin-top: 15px;
+    font-size: 30px;
+    color:#6195ff;
+    transition: color 1s;
+}
+.d4:hover .sec4i{
+    z-index: 5;
+}
+.sec4p{
+    position: absolute;
+    top: 35px;
+    left: 62px;
+    color: gray;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    transition: color 1s;
+}
+.d4:hover .sec4p{
+    color :antiquewhite;
+    z-index: 5;
+}
+.sec5background{
+    width: 100%;
+    height: 700px;
+    background-color: rgba(176, 161, 161,0.4); 
+    margin-top: 700px;
+}
+.sec5h1 h1{
+    position: absolute;
+    margin-left: 155px;
+    margin-top: 50px;
+}
+.sec5background hr{
+    color:rgb(61, 61, 190) ;
+    width: 60px;
+    margin-top: 9px;
+    border: 2px solid;
+}
+.sec5background img{
+     position: absolute;
+     width: 550px;
+     height: 500px;
+     margin-top: 50px;
+     left: 850px;
+}
+.sec5h2{
+    position: absolute;
+    margin-top: 120px;
+    margin-left: 155px;
+    font-size: 12px;
+    color: gray;
+}
+.sec5background .sec5i1,.sec5i2,.sec5i3,.sec5i4{
+    color: #6195ff;
+    font-size: 19px;
+}
+.sec5background p{
+    color:gray;
+    font-size: 19px;
+}
+.sec5i1{
+    position: absolute;
+    margin-top: 200px;
+    margin-left: 155px;
+}
+.sec5p1{
+    position: absolute;
+    margin-top: 200px;
+    margin-left: 180px;
+}
+.sec5i2{
+    position: absolute;
+    margin-top: 230px;
+    margin-left: 155px;
+}
+.sec5p2{
+    position: absolute;
+    margin-top: 230px;
+    margin-left: 180px;
+}
+.sec5i3{
+    position: absolute;
+    margin-top: 260px;
+    margin-left: 155px;
+}
+.sec5p3{
+    position: absolute;
+    margin-top: 260px;
+    margin-left: 180px;
+}
+.sec5i4{
+    position: absolute;
+    margin-top: 290px;
+    margin-left: 155px;
+}
+.sec5p4{
+    position: absolute;
+    margin-top: 290px;
+    margin-left: 180px;
+}
+.d55{
+    position: absolute;
+    font-size: 10px;
+    margin-top: 570px;
+    float: left;
+    left: 1100px;
+}
+.sec5ldiv2{
+    margin-left: 30px;
+}
+.sec5ldiv3{
+    margin-left: 60px;
+}
+.sec5ldiv1:hover{
+    color: #6195ff;
+}
+.sec5ldiv2:hover{
+    color: #6195ff;
+}
+.sec5ldiv3:hover{
+    color: #6195ff;
+}
+.sec6background{
+    margin-top: 200px;
+    width: 100%;
+    height: 400px;
+    background-image: url(../imgs/all\ day\ i\ dream.jpeg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+.sec6overlay{
+    position: absolute;
+    width: 100%;
+    height: 400px;
+    background-color: rgba(0,0 , 0, 0.5); 
+}
+.sec6con1{
+    float: left;
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    font-size: 20px;
+}
+.sec6c1{
+    margin-left: 100px;
+}
+.sec6c2{
+    margin-left: 300px;
+}
+.sec6c3{
+    margin-left: 490px;
+}
+.sec6c4{
+    margin-left: 700px;
+}
+.sec6con1 i{
+    color: #6195ff;
+    font-size: 30px;
+}
+.sec6con1 p{
+    color: white;
+    margin-top: 15px;
+    font-weight: bold;
+}
+.sec7h1{
+    margin-top: 120px;
+    text-align: center;
+}
+.sec7h1 hr{
+    width: 40px;
+    margin: auto;
+    margin-top: 4px;
+    color: rgb(68, 68, 175);
+    border: 2px  solid;
+}
+.sec7parent{
+    overflow: auto;
+    margin:150px 300px ;
+}
+.sec7d1{
+    position: absolute;
+    width: 310px;
+    height: 350px;
+    border: 2px solid rgb(127, 126, 126);
+    text-align: center;
+    float: left;   
+    left: 110px;
+    border-radius: 10px;
+}
+.sec7d2{
+    position: absolute;
+    width: 320px;
+    height: 350px;
+    left: 590px;
+    border: 2px solid gray;
+    text-align: center;
+    float: left;
+    border-radius: 10px;
+}
+.sec7d3{
+    position: absolute;
+    width: 320px;
+    height: 350px;
+    right: 100px;
+    border: 2px solid gray;
+    text-align: center;
+    margin-right: 25px;
+    float: left;
+    border-radius: 10px;
+}
+.sec7parent h3{
+    margin-top: 25px;
+   opacity: 0.5;
+   font-size: 15px; 
+}
+.sec7parent h4{
+    width: 90px;
+    height: 90px;
+    margin-top: 25px;
+    border: 2px solid rgb(63, 63, 116);
+    border-radius: 50%;
+    font-size: 15px;
+    margin: auto;
+}
+.sec7span{
+    font-size: 40px;
+}
+.sec7t1{
+    margin-top: 25px;
+}
+.sec7tt{
+    margin-top: 25px;
+    font-size: 19px;
+}
+.sec7p{
+    margin-top: 5px;
+}
+.sec7d1:hover,.sec7d2:hover,.sec7d3:hover  .sec7tt{
+    color: aliceblue;
+    transition: 1s;
+}
+.sec7btn{
+    width: 100px;
+    height:25px;
+    background-color:rgb(206, 206, 223);
+    border: 2px solid rgb(63, 63, 116) ;
+    margin-top: 25px;
+}
+.sec7btn:hover{
+    background-color:rgb(68, 68, 175,0.5);
+}
+.sec7d2,.sec7d3,.sec7d1{
+    overflow: hidden;
+}
+.sec7d2::after,.sec7d3::after,.sec7d1::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: black;
+    opacity: 0;
+    transition: 0.5s;
+    border-radius: 10px;
+}
+.sec7d2:hover::after,.sec7d3:hover::after,.sec7d1:hover::after{
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+    opacity: 0.7;
+    mix-blend-mode: lighten; 
+}
+.sec8background{
+    background-image: url(../imgs/fast-fashion-vs-slow-sustainable-fashion.jpg);
+    margin-top: 500px;
+    width: 100%;
+    height: 400px;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.sec8i1 img{
+    border-radius: 50%;
+}
+.sec8i2 img{
+    border-radius: 50%;
+    display: inline;
+}
+.sec8con1{
+    float: left;
+    margin-top: 100px;
+    margin-left: 220px;
+    text-align: center;
+}
+.sec8i1{
+    position: absolute;
+    left: 270px;
+    margin-top: 20px;
+}
+.sec8con1 h2{
+    margin-top: 50px;
+}
+.sec8con1 h3{
+   color:blue;
+}
+.sec8con1 h4{
+    margin-top: 20px;
+    margin-left: 50px;
+}
+.sec8i2{
+    position: absolute;
+    left: 940px;
+    margin-top: 20px;
+}
+.sec9title1 h1{
+    margin-top: 100px;
+    text-align: center;
+    text-transform:capitalize;
+}
+.sec9title1 hr{
+    width: 40px;
+    margin: auto;
+    margin-top: 4px;
+    color: rgb(68, 68, 175);
+    border: 2px  solid;
+    
+}
+.sec9container{
+    width: 80%;
+    margin: auto;
+}
+.sec9img img{
+    width: 310px;
+    height: 500px;
+    border: 2px solid;
+}
+.sec9item{
+    margin-top: 50px;
+    float: left;
+    width: 30%;
+    padding: 10px 10px;
+}
+.sec9item2{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.sec9img{
+    position: relative;
+    width: 90%;
+    margin: auto;
+}
+.sec9overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+.sec9img i{
+    position: absolute;
+    display: block;
+    text-decoration: none;
+    color: rgb(16, 15, 15);
+    font-size: 23px;
+    bottom: 0;
+    right: 0;
+    margin-right: 10px;
+    margin-bottom: 10px;  
+}
+.sec9img::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: black;
+    opacity: 0;  
+}
+.sec9img:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    transition:0.8s;
+}
+.sec9img .sec9w{
+    color: rgb(16, 16, 16);
+    margin-top: 40px;
+    margin-left:40px ;
+    font-size: 33px;
+    line-height: 15px;
+   
+}
+.sec9img:hover .sec9w{
+    mix-blend-mode: lighten; 
+    z-index: 10000;
+    color:white;
+    transition: 1s;
+    
+  
+}
+.sec9img:hover i{
+    mix-blend-mode: lighten; 
+    z-index: 10000;
+    color:white;
+    transition: 1s;
+}
+.sec10title{
+    margin-top: 650px;
+    text-align: center;
+}
+.sec10title hr{
+    width: 40px;
+    margin: auto;
+    margin-top: 4px;
+    color: rgb(68, 68, 175);
+    border: 2px  solid;
+}
+.sec10item1{
+    position: relative;
+    margin-left: 110px;
+    margin-top: 30px;
+    width: 350px;
+    height: 600px;
+    background-color:rgba(185, 161, 161, 0.4);
+    float: left;
+}
+.sec10img img{
+    margin-left: 50px;
+    margin-top: 50px;
+    width: 250px;
+    height: 350px;
+    border: 2px solid;
+}
+.sec10des1 p{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.sec10des1 i{
+  margin-left: 50px;
+  float: left;
+  margin-top: 20px;
+  font-size: 12px;
+  color:#0053f8;
+}
+.sec10des2 i{
+    float: left;
+    margin-left: 50px;
+    margin-top: 20px;
+    font-size: 12px;
+    color:#0053f8;
+}
+.sec10des3 i{
+    float: left;
+    margin-left: 50px;
+    margin-top: 20px;
+    font-size: 12px;
+    color:#0053f8;
+}
+.sec10des1 .name{
+    margin-top: 10px;
+    float: left;
+}
+.sec10des2 .time{
+    margin-top: 10px;
+    float: left;
+}
+.sec10des3 .chat{
+    margin-top: 10px;
+    float: left;
+}
+.sec10des4{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 30px;
+    margin-top: 50px;
+    margin-right: 10px;
+}
+.sec10des5 a{
+    position: absolute;
+    color: #0053f8;
+    font-size: 20px;
+    text-decoration: none;
+    margin-top: 30px;
+    transition: color 1s;
+    font-weight: bold;
+    margin-left: 120px;
+}
+.sec10item1::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: black;
+    opacity: 0; 
+
+}
+.sec10item1:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+    transition:0.8s;
+    
+}
+.sec10item1:hover a{
+    z-index: 10000; 
+}
+.sec10item1:hover i{
+    z-index: 10000;
+}
+.sec10item1:hover h4{
+    z-index: 10000;
+}
+.sec11background{
+    width: 100%;
+    height: 400px;
+    margin-top: 660px;
+    background-color:rgba(152, 118, 118, 0.4);
+}
+.sec11logo img{
+    width: 250px;
+    height:110px;
+    margin-left: 620px;
+    margin-top: 50px;
+    border-radius: 20px;
+}
+.sec11i a{
+    float: left;
+    color:#000000;
+    margin-top: 100px;
+   margin-left: 20px;
+   font-size: 35px;
+ }
+ .sec11i{
+    margin-left: 600px;
+ }
+.sec11background .copyright{
+   text-align: center;
+    margin-top: 150px;
+    color: grey;
+}
